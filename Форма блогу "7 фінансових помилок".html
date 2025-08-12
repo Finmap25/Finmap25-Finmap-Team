@@ -1,0 +1,152 @@
+<style>
+* { box-sizing: border-box; }
+
+  .fin-ban {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #7FF2B8 0%, #7FDFEF 100%);
+    border-radius: 2em;
+    padding: 2em;
+    gap: 2em;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .fin-ban-text {
+    flex: 1;
+    min-width: 16em;
+    width: 100%;
+    max-width: 60%;
+  }
+
+  .fin-ban-text h2 {
+    margin-top: 0 !important;
+    font-size: 2.25em !important;
+    color: #000;
+  }
+
+  .fin-form-group {
+    position: relative;
+    margin-bottom: 1em;
+  }
+
+  .fin-form-group input {
+    width: 100%;
+    padding: 1.25em 2.5em 1.25em 3em;
+    border: none;
+    border-radius: 1.25em;
+    font-size: 1.25em;
+    outline: none;
+  }
+
+  .fin-form-group .banner-form-icon {
+    position: absolute;
+    left: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #888;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .form-btn-blg {
+    display: inline-block;
+    background: linear-gradient(90deg, #000, #1a3b34);
+    color: #fff;
+    text-align: center;
+    padding: 1.5em;
+    border: none;
+    border-radius: 1.25em;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.25em;
+    transition: transform 0.3s ease-in-out;
+  }
+
+	.form-btn-blg:hover {
+  	background: #fff;
+    color: #000;
+  }
+  .fin-ban-image {
+    flex: 1;
+    text-align: center;
+    position: absolute;
+    right: -15em;
+    bottom: -10em;
+    width: 42em;
+  }
+
+  .fin-ban-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    position: static;
+  }
+  
+  .fin-ban-text h2 {
+  margin-top: 0 !important;
+	}
+
+
+  /* Адаптив */
+  @media (max-width: 768px) { /* 768px */
+    .fin-ban {
+      flex-direction: row;
+      align-items: stretch;
+      width: 100%;
+    }
+    .fin-ban-text {
+      text-align: left;
+      margin-bottom: 20em;
+      max-width: 100%;
+    }
+    .fin-ban-image {
+      text-align: center;
+      width: 35em;
+      right: -4em;
+      bottom: -10em;
+    }
+    .fin-ban-image img{
+      position: static;
+      bottom: 0;
+      left: 0;
+      top: 0.1em;
+    }
+  
+</style>
+
+<div>
+    <div class="fin-ban">
+  <div class="fin-ban-text">
+    <h2>Завантажте гайд “7 фінансових помилок”</h2>
+
+    <form target="_blank" action="https://drive.google.com/file/d/1ZDyAeN9ruSfTB6JJ8_uEoZfJ24qKd23u/view?usp=sharing" method="get" id="blog-form">
+      <div class="fin-form-group">
+        <img class="banner-form-icon" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/680020ab08593ddaefb566db_tabler-icon-user-filled.svg" alt="icon user">
+        <input type="text" id="name" name="name" placeholder="Ім’я" required>
+      </div>
+      <div class="fin-form-group">
+        <img class="banner-form-icon" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/680020ab08593ddaefb566da_tabler-icon-mail-filled.svg" alt="icon email">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+      <button class="form-btn-blg" type="submit">Отримати гайд</button>
+    </form>
+  </div>
+  <div class="fin-ban-image">
+    <img src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/689a069ee98dec4de5a710a7_Rectangle%20(1).png" alt="Гайд">
+  </div>
+</div>
+</div>
+
+
+<script>
+document.getElementById('blog-form').addEventListener('submit', function(e) {
+  e.preventDefault(); // блокуємо стандартну відправку
+
+  // Відкриваємо гайд у новій вкладці
+  window.open("https://drive.google.com/file/d/1ZDyAeN9ruSfTB6JJ8_uEoZfJ24qKd23u/view?usp=sharing", "_blank");
+
+});
+</script>
