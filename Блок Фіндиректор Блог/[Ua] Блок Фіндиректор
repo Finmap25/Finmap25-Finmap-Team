@@ -1,0 +1,262 @@
+<style>
+	.fin-block-section {
+        padding-bottom: 1.25em;
+        position: relative;
+        background: #181D1F !important;
+        border-radius: 1.5em;
+        overflow: hidden;
+    }
+    .fin-block_pattern {
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    .fin-block_gradient{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .fin-block_gradient-green{
+        z-index: 1s;
+        position: absolute;
+        top: -5em;
+        right: 0;
+        rotate: -110deg;
+    }
+    .fin-block-container {
+        position: relative;
+        z-index: 2;
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+        padding-top: 1.25em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        grid-column-gap: 1.25em;
+    }
+    .fin-content-block {
+        position: relative;
+        z-index: 2;
+        width: 44%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .fin-header-block{
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 1em;
+
+    }
+		.fin-header-block h2.fin-header-h2 {
+  			margin-top: 0 !important;
+  			margin-bottom: 0 !important;
+		}
+
+    .fin-header-h2 {
+        margin: 0 !important;
+        font-size: 1.7em;
+        font-weight: 600;
+        line-height: 100%;
+        background: linear-gradient(90deg, #7FDFEF 0%, #7FF2B8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+    }
+    .fin-header-content{
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 0.25em;
+        max-width: 21em;
+    }
+    .fin-header-p {
+        margin: 0 !important;
+        margin: 0;
+        color: #fff !important;
+        line-height: 100%;
+        opacity: 80%;
+    }
+    .fin-header-p2 {
+        margin: 0 !important;
+        margin: 0;
+        font-size: 0.87em !important;
+        font-weight: 500;
+        color: #181D1F;
+        opacity: 80%;
+    }
+    .fin-btn-block{
+        display: flex;
+        grid-column-gap: 1em;
+        align-items: center;
+
+    }
+    .fin-btn {
+        text-align: center;
+        cursor: pointer;
+        font-size: 0.87em !important;
+        color: #000 !important;
+        background: linear-gradient(90deg, #7FF2B8 0%, #7FDFEF 100%);
+        border-radius: 0.75em;
+        text-decoration: none !important;
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+        padding-top: 1.25em;
+        padding-bottom: 1.25em;
+        align-content: center;
+    }
+    .fin-btn:hover {
+        background-color: #ffffff !important;
+        color: #181D1F !important;
+    }
+    .cta-note2 {
+        margin: 0 !important;
+        font-size: 0.75 !important;
+        font-weight: 500;
+        color: #181D1F;
+        opacity: 60%;
+        width: 4.75em;
+        line-height: 100%;
+    }
+    .fin-photo-block {
+        width: 15.62em;
+        height: auto;
+        display: inline-block;
+        position: absolute;
+        left: 60%;
+        bottom: -2em;
+    }
+    .fin-icon-block {
+        width: 2em;
+        height: 2em;
+        display: inline-block; 
+    }
+    .fin-header-span {
+        font-weight: 700;
+    }
+
+
+
+    @media (max-width: 768px) {
+    .fin-block-container {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+        height: 430px;
+        padding-bottom: 0;
+    }
+
+    .fin-block_pattern {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    } 
+    
+    .fin-block_gradient{
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: 108px;
+        padding-bottom: 0;
+    }
+    .fin-block_gradient-green{
+        z-index: 1s;
+        position: absolute;
+        top: 300px;
+        height: 270px;
+        width: 100%;
+        rotate: 360deg;
+    }
+    .fin-content-block {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 20px;
+    }  
+    .fin-header-h2 {
+        font-size: 24px;
+    }
+    .fin-header-p {
+        font-size: 16px !important;
+        line-height: 110% !important;
+        margin: 0 !important;
+        margin: 0;
+        font-weight: 500;
+    }
+    .fin-header-p2 {
+        margin: 0 !important;
+        margin: 0;
+        font-weight: 500;
+            
+   }
+   .fin-btn-block{
+        display: flex;
+        gap: 13px;
+        align-items: center;
+        flex-direction: column;
+   }
+   .fin-btn {  
+        font-weight: 500;
+        width: 100%;
+        text-align:center;
+        font-size: 12px !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+   }
+   .cta-note2 {
+        margin: 0 !important;
+        font-size: 14px !important;
+        font-weight: 500;
+        color: #181D1F;
+        opacity: 60%;
+        width: 100%;
+        line-height: 100%;
+        text-align: center;
+    }
+    .fin-icon-block {
+         position: absolute !important;
+         display: block !important;
+         bottom: 5px;
+         left: 25px;
+    }
+    .fin-photo-block {
+        width: 251px !important;
+        height: auto;
+        bottom: 0px;
+        left: auto;
+        right: auto;   
+   }
+}
+</style>
+	<div class="fin-block-section">
+    <img class="fin-block_pattern" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/6867be4be0494487b6d5ddaa_pattern.avif" alt="fin-block_pattern">
+    <img class="fin-block_gradient" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/6867be4b12038a512d8759d5_graphics.avif" alt="fin-block_gradient"> 
+    <img class="fin-block_gradient-green" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/6867be4b5cfb7a3b9c57c54c_gradient.avif" alt="fin-block_gradient-green">  
+    <div class="fin-block-container ">
+        <div class="fin-content-block">
+                <div class="fin-header-block">
+                    <h2 class="fin-header-h2">Фінансовий директор на аутсорсі</h2>
+                    <div class="fin-header-content">
+                    <p class="fin-header-p">допоможе налаштувати ефективний облік та приймати виважені управлінські рішення</p>
+                </div>    
+                </div>
+                <div class="fin-btn-block">
+                    <a href="https://www.finmap.online/ua/findirector" target="_blank" class="fin-btn">Замовити безкоштовну консультацію</a>
+                </div>
+            </div>        
+        <img class="fin-photo-block" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/6867be4b6da5da47d029dce9_diagram%20full.avif" alt="fin-photo-block">
+        <img class="fin-icon-block" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/6867be4bc4f1cd94edad00a3_Vector.avif" alt="fin-icon-block">
+    </div>
+	</div>
