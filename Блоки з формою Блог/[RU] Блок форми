@@ -176,7 +176,7 @@
 <div>
     <div class="fin-ban">
   <div class="fin-ban-text">
-    <h2>Загрузите чек-лист "Защищен Ли Твой Бизнес Финансово"</h2>
+    <h2>Загрузите Чек-лист "Защищен Ли Твой Бизнес Финансово"</h2>
 
     <form target="_blank" action="https://drive.google.com/file/d/1DXH1smFZwVk9WSgYYzSsv1V5BRT0Mjk-/view?usp=sharing" method="get" id="blog-form">
       <div class="fin-form-group">
@@ -194,7 +194,7 @@
             Я прочитал и соглашаюсь с <a class="fin-check-link" href="https://www.finmap.online/oferta-eng" target="_blank">Договор публичной оферты</a> и <a class="fin-check-link" href="https://www.finmap.online/email-agreement" target="_blank">Политика конфиденциальности</a>
           </span>
         </label>
-      <button class="form-btn-blg" type="submit">Получить чек-лист</button>
+      <button class="form-btn-blg" type="submit">Получить Чек-лист</button>
     </form>
   </div>
   <div class="fin-ban-image">
