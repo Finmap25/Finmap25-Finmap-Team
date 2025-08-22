@@ -1,0 +1,112 @@
+<style>
+  * {
+      box-sizing: border-box;
+    }
+
+    .podcast-card {
+      position: relative;  
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+      background: #EEF6F0;
+      border-radius: 1em;
+      padding: 1em;
+      width: 100%;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .fin-grad {
+      position: absolute;
+      left: 0; 
+      bottom: -3.5em; 
+      z-index: 0;  
+    }
+
+    .grid-decor {
+      position: absolute;  
+    	opacity: 60%;
+      z-index: 2;
+    }
+
+    .podcast-logo img {
+      flex-shrink: 0;
+      width: 10em;
+      height: 10em;
+      display: flex;
+      z-index: 10;
+    }
+    
+     .fin-logo-banner {
+      position: relative;  
+      z-index: 3;
+    }
+
+    .podcast-content {
+      flex: 1; 
+      z-index: 3;
+    }
+
+    .podcast-content h4 {
+      font-size: 1em;
+      font-weight: 400;
+      margin: 0;
+      color: #333;
+    }
+
+		div.podcast-content h2 {
+      font-size: 1.4em !important;
+      margin: 0.2em 0 1em !important;
+      font-weight: 600 !important;
+      color: #000 !important;
+		}
+
+    audio {
+      width: 100%;
+    }
+
+    /* Адаптив под мобильные */
+    @media (max-width: 37.5em) {
+      .podcast-card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 1.2em;
+      }
+
+      .fin-grad {
+        bottom: 0;
+        height: 110%;
+      }
+
+      .podcast-logo img {
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+        width: 7em;
+        height: 7em;
+        margin-bottom: 1em;
+      }
+
+      .podcast-content h2 {
+        font-size: 2em;
+      }
+    }
+</style>
+<div> 
+    <div class="podcast-card">
+        <img class="fin-grad" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/68a6c0dbecf6530ae5276c1e_gradient%20%D1%852.avif" alt="gradient">
+        <img class="grid-decor" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/68a6c0ce8d6959e45bb609f6_grid.avif" alt="grid">
+    <div class="podcast-logo">
+        <img class="fin-logo-banner" src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/68a6c1ebe6534dc9a5e7e71a_fin-icon-block.avif" alt="fin-logo">
+    </div>
+    <div class="podcast-content">
+      <h4>The Finmap Podcast</h4>
+      <h2>Google інвестував в український Finmap. Чому?</h2>
+      <audio controls>
+        <source src="https://github.com/Finmap25/Finmap25-Finmap-Team/raw/refs/heads/main/podcast/mix_6m48s_audio-joinercom_798h7.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує аудіо елемент.
+      </audio>
+    </div>
+  </div>
+ </div>
