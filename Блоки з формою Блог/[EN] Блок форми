@@ -173,7 +173,7 @@
  <div>
     <div class="fin-ban">
   <div class="fin-ban-text">
-    <h2>Download the guide “Is your business financially secure”</h2>
+    <h2>Download the Checklist “Is Your Business Financially Secure?”</h2>
 
     <form target="_blank" action="https://drive.google.com/file/d/10W-JEfSqm0DND9uGZ66SxT38ms4Eoddz/view?usp=sharing" method="get" id="blog-form">
       <div class="fin-form-group">
@@ -191,7 +191,7 @@
             I have read and agree to the <a href="https://www.finmap.online/oferta-eng" target="_blank"> <span class="form-checkbox-blog">Public offer agreement </span></a> and <span class="form-checkbox-blog"><a href="https://www.finmap.online/email-agreement" target="_blank"> Privacy Policy </a></span>
           </span>
         </label>
-      <button class="form-btn-blg" type="submit">Get a checklist</button>
+      <button class="form-btn-blg" type="submit">Get a Checklist</button>
     </form>
   </div>
   <div class="fin-ban-image">
