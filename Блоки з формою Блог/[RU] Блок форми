@@ -16,14 +16,12 @@
 
   .fin-ban-text {
     flex: 1;
-    min-width: 16em;
     width: 100%;
-    max-width: 60%;
+    max-width: 50%;
   }
 
-  .fin-ban-text h2 {
+  div.fin-ban-text h3 {
     margin-top: 0 !important;
-    font-size: 2.25em !important;
     color: #000;
   }
 
@@ -34,10 +32,10 @@
 
   .fin-form-group input {
     width: 100%;
-    padding: 1.25em 2.5em 1.25em 3em;
+    padding: 1em 2.5em 1em 3em;
     border: none;
     border-radius: 1.25em;
-    font-size: 1.25em;
+    font-size: 1em;
     outline: none;
   }
 
@@ -47,8 +45,8 @@
     top: 50%;
     transform: translateY(-50%);
     fill: #888;
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
   }
 
   .form-btn-blg {
@@ -56,7 +54,7 @@
     background: linear-gradient(90deg, #000, #1a3b34);
     color: #fff;
     text-align: center;
-    padding: 1.5em;
+    padding: 1em;
     border: none;
     border-radius: 1.25em;
     cursor: pointer;
@@ -123,12 +121,6 @@
   .fin-checkbox-label {
     display: inline-block;
   }
-  
-   .fin-check-link {
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-  }
 
   /* ---------- Адаптив ---------- */
   .fin-ban-image {
@@ -146,6 +138,9 @@
     border-radius: 0.5em;
     position: static;
   }
+  .form-checkbox-blog {
+  	font-weight: 500;
+  }
   
   @media (max-width: 768px) {
     .fin-ban {
@@ -155,7 +150,7 @@
     }
     .fin-ban-text {
       text-align: left;
-      margin-bottom: 20em;
+      margin-bottom: 18em;
       max-width: 100%;
     }
     .fin-ban-image {
@@ -173,10 +168,10 @@
   }
 </style>
 
-<div>
+ <div>
     <div class="fin-ban">
   <div class="fin-ban-text">
-    <h2>Загрузите Чек-лист "Защищен Ли Твой Бизнес Финансово"</h2>
+    <h3>Загрузите чек-лист "Защищен ли твой бизнес финансово"</h3>
 
     <form target="_blank" action="https://drive.google.com/file/d/1DXH1smFZwVk9WSgYYzSsv1V5BRT0Mjk-/view?usp=sharing" method="get" id="blog-form">
       <div class="fin-form-group">
@@ -188,17 +183,17 @@
         <input type="email" id="email" name="email" placeholder="Email" required>
       </div>
       <label class="fin-checkbox-group">
-          <input type="checkbox" id="consent" required>
+          <input type="checkbox" id="consent" name="consent" value="yes" required>
           <span class="fin-checkbox-box"></span>
           <span class="fin-checkbox-label">
-            Я прочитал и соглашаюсь с <a class="fin-check-link" href="https://www.finmap.online/oferta-eng" target="_blank">Договор публичной оферты</a> и <a class="fin-check-link" href="https://www.finmap.online/email-agreement" target="_blank">Политика конфиденциальности</a>
+            Я прочитал и соглашаюсь с <a href="https://www.finmap.online/ru/oferta-eng" target="_blank"> <span class="form-checkbox-blog">Договор публичной оферты </span></a> и <span class="form-checkbox-blog"><a href="https://www.finmap.online/ru/email-agreement" target="_blank"> Политика конфиденциальности </a></span>
           </span>
         </label>
       <button class="form-btn-blg" type="submit">Получить Чек-лист</button>
     </form>
   </div>
   <div class="fin-ban-image">
-    <img src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/68a465fc99a9196c3898b742_blog-ru.avif" alt="Гайд">
+    <img src="https://cdn.prod.website-files.com/645d1217d0ff7c2ef8582f07/68a465fc29fa1a04401fa270_blog-en.avif" alt="Гайд">
   </div>
 </div>
 </div>
