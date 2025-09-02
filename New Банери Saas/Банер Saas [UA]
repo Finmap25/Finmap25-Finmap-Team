@@ -1,5 +1,8 @@
 <style>
     .getfin-block-section {
+    		display: flex;
+        justify-content: center;
+        height: 15.4em;
         padding-bottom: 2.5em;
         position: relative;
         background: #EEF6F0 !important;
@@ -21,13 +24,14 @@
     .getfin-block-container {
         position: relative;
         z-index: 2;
+        width: 100%;
         padding-left: 2.5em;
         padding-right: 2.5em;
-        padding-top: 0;
+        padding-top: 1em;
+        padding-bottom: 0;
         display: flex;
-        align-items: flex-start;
         justify-content: space-between;
-        grid-column-gap: 1.25em;
+        grid-column-gap: 3em;
     }
     .getfin-content-block {
         position: relative;
@@ -85,15 +89,19 @@
         display: inline-block;
         position: absolute;
         left: 50%;
-        top: 0.5em;
+        bottom: -2.5em;
+    }
+   
+		.getfin-link {
+    		text-decoration: none;
     }
 		.derfin-link {
     		text-decoration: none;
     }
- 
- 
+
     @media (max-width: 760px) {
     .getfin-block-section {
+    		height: auto;
 		    padding-bottom: 0;
     }
     .getfin-block-container {
